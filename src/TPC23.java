@@ -6,12 +6,12 @@ public class TPC23 {
         display(d);
         Cat c = new Cat();
         display(c);
-    }
-    private static void display(Animal r) {
+    }//                         upcasting
+    private static void display(Animal r) { //다형성인수
         r.eat();
 
         if ( r instanceof Cat) {
-            ((Cat)r).night();
+            ((Cat)r).night(); //downcasting
         }
     }
 }
