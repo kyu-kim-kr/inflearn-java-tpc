@@ -11,5 +11,16 @@ public class TPC24 {
         for(int i=0 ; i < ani.length; i ++ ){
             ani[i].eat();
         }
+
+        display(ani);
+    }
+
+    private static void display(Animal[] ani) {
+        for(int i=0 ; i < ani.length; i ++ ){
+            ani[i].eat();
+            if (ani[i] instanceof Cat) {
+                ((Cat)ani[i]).night();
+            }
+        }
     }
 }
