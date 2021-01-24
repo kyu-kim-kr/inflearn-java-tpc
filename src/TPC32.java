@@ -3,7 +3,7 @@ import kr.tpc.JavaMySQL;
 import kr.tpc.JavaOracle;
 
 public class TPC32 {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         //Orcale, MySL -> Driver class
         Dbconnect conn = new JavaOracle();
         conn.getConnection("url", "kyu", "12345");
